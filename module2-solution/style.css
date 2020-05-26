@@ -1,0 +1,98 @@
+/* Base style */
+* {
+  box-sizing: border-box;
+}
+h1 {
+  margin-bottom: 30px;
+  text-align:center;
+  font-size:200%;
+}
+/* style for each section */
+section {
+  border: 1px solid black;
+  background-color:#CFD8DC  ;
+  width: 95%;
+  height: 210px;
+   margin-right: 5px;
+    margin-left: 5px;
+   margin-bottom: 12px;
+  font-family: sans-serif;
+  overflow: hidden;
+
+}
+/* style for each section content */
+#content{
+   border: none;
+   margin:7px;
+   text-align:justify;
+   
+}
+/* style for section header */
+p{
+    border: 1px solid black;
+    color:black;
+    padding-top:2px;
+    width:20%;
+    height:15%;
+    float: right;
+    left:100%;
+    margin-top: 0;
+    margin-bottom: 10px;
+    text-align: center;
+    font-family: sans-serif;
+    font-weight:bold;
+    font-size: 120%;
+
+  }
+
+/* for Responsive Framework. */
+.row {
+  width: 100%;
+}
+
+/********** Desktops only *********/
+@media (min-width: 992px) {
+  .col1, .col2, .col3{
+    float: left;
+    width: 33.33%;
+   
+  }
+}
+
+/********** Tablet devices only **********/
+@media (min-width: 768px) and (max-width: 991px) {
+   .col1{
+    float: left;
+    width: 50%;
+    
+  }
+  .col2{
+     float: left;
+    width: 50%;
+   margin-left: 0;
+     }
+  .col3{
+     float: left;
+    width: 103%;
+
+  }
+}
+/********** mobile devices only **********/
+@media screen and (max-width: 767px) {
+   .col1, .col2, .col3{
+    float: left;
+    width: 100%;
+    
+  }
+}
+/* background color for each section heading */
+ #p1 {
+  background-color: #7CB342  ;
+}
+#p2 {
+  background-color: #FF9900  ;
+}
+#p3 {
+  background-color: #FFC107;
+}
+
